@@ -109,7 +109,7 @@ body {
 	--background-modifier-border: #6F6F6F;
 	--background-modifier-active-hover: #525252;
 	--text-highlight-bg: #001d6c;
-	--text-error: #ff8389;
+	--text-error: #d8343c;
 	--table-borders: #8d8d8d;
 	--table-headers: #333333;
 }
@@ -592,6 +592,9 @@ input[type='text']:not(input[type='text'].metadata-property-key-input) {
 	color: var(--text-accent);
 }
 .modal button {
+
+	background-color: transparent;
+
 	&:hover {
 		background-color: var(--text-accent);
 		color: white;
@@ -599,6 +602,7 @@ input[type='text']:not(input[type='text'].metadata-property-key-input) {
 
 	&.mod-cta {
 		color: white;
+		background-color: var(--text-accent);
 	}
 	&.mod-warning {
 		background-color: var(--text-error);
