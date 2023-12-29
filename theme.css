@@ -253,7 +253,7 @@ body {
 	font-size: 1.75rem !important;
 	font-weight: 400 !important;
 }
-.markdown-reading-view .markdown-preview-view hr {
+.markdown-reading-view .markdown-preview-view hr, hr {
 	margin: 0 !important;
 	border: 1.5px solid var(--background-modifier-active-hover);
 }
