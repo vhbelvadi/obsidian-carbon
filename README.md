@@ -4,8 +4,8 @@ A minimal and opinionated theme with light and dark schemes for Obsidian. This t
 
 **Editing mode**
 
-![Editing mode](carbon-editing.png)
+![Editing mode](carbon-editing-mockup.png)
 
 **Reading mode**
 
-![Reading mode](carbon-reading.png)
+![Reading mode](carbon-reading-mockup.png)
