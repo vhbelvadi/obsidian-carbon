@@ -1,7 +1,7 @@
 {
 	"name": "Carbon",
-	"version": "0.4",
-	"minAppVersion": "0.1",
+	"version": "0.4.1",
+	"minAppVersion": "1.0.0",
 	"author": "V.H. Belvadi",
 	"authorUrl": "https://vhbelvadi.com",
 	"fundingUrl": "https://buymeacoffee.com/vhbelvadi"

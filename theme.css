@@ -241,8 +241,13 @@ body {
 .markdown-reading-view .markdown-preview-view h1 {
 	font-size: 2rem !important;
 	font-weight: 400 !important;
-	color: var(--text-accent);
 	text-transform: capitalize;
+}
+.markdown-reading-view .markdown-preview-view .mod-header + div > h1:first-of-type {
+	color: var(--text-accent);
+}
+.HyperMD-header.HyperMD-header-1:first-of-type {
+	color: var(--text-accent);
 }
 .markdown-reading-view .markdown-preview-view h2 {
 	font-size: 1.75rem !important;
