@@ -2,10 +2,16 @@ A minimal and opinionated theme with light and dark schemes for Obsidian. This t
 
 **NB** This theme is in beta. Please open an issue on Github if you have problems, or send an e-mail to hello@vhbelvadi.com or @vhbelvadi@historians.social on Mastodon.
 
-**Editing mode**
+### Screenshots
 
-![Editing mode](carbon-editing-mockup.png)
+![Editing mode](light-general.png)
+_Editing mode (light scheme)_
 
-**Reading mode**
+![Editing mode](dark-menu.png)
+_Menu (dark scheme)_
 
-![Reading mode](carbon-reading-mockup.png)
+![Editing mode](light-embed.png)
+_Example showing embed previews (light scheme)_
+
+![Reading mode](light-reading.png)
+_Reading mode (light scheme)_
