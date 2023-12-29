@@ -110,6 +110,8 @@ body {
 	--background-modifier-active-hover: #525252;
 	--text-highlight-bg: #001d6c;
 	--text-error: #ff8389;
+	--table-borders: #8d8d8d;
+	--table-headers: #333333;
 }
 
 .theme-light {
@@ -129,6 +131,8 @@ body {
 	--background-modifier-active-hover: #E8E8E8;
 	--text-highlight-bg: #d0e2ff;
 	--text-error: #da1e28;
+	--table-borders: #C6C6C6;
+	--table-headers: #e8e8e8;
 }
 .workspace-ribbon, .workspace-tab-header-container {
 	--icon-color: #8D8D8D;
@@ -308,10 +312,120 @@ body {
 td .tag {
 	display: inline-block;
 	margin-bottom: 0.25rem;
+	padding: 0.5em 0.65em;
+}
+
+.markdown-embed-link svg {
+	stroke: var(--text-accent);
+	width: 1rem;
+	height: 1rem;
+}
+
+/* TABLES */
+.table-wrapper {
+	background-color: var(--background-secondary);
+}
+.table-wrapper * {
+	font-size: 0.9rem;
+}
+.table-wrapper .internal-embed {
+	padding: 0px !important;
+
+	& p {
+		margin-block-end: 0px;
+	}
+}
+.table-wrapper .markdown-preview-sizer {
+	min-height: 160px;
+}
+.table-wrapper .markdown-embed-content, .table-wrapper .markdown-embed-link {
+	margin-top: -1.25rem !important;
+}
+.markdown-rendered thead tr > th {
+	border: 0px;
+}
+.cm-table-widget .table-cell-wrapper {
+	padding: var(--size-4-4) var(--size-4-4) !important;
+}
+thead {
+	/* background-color: var(--background-modifier-active-hover); */
+	background-color: var(--table-headers);
+}
+.markdown-rendered tbody tr * {
+	border: 0px !important;
+}
+tbody tr + tr {
+	border-top: 1px solid var(--table-borders) !important;
 }
 
 /* PROPERTIES */
+.metadata-container {
+	background-color: var(--table-headers);
 
+	&.is-collapsed {
+		background-color: var(--background-secondary);
+	}
+}
+.metadata-properties {
+	background-color: var(--background-secondary);
+	gap: 0;
+}
+.metadata-container:not(.metadata-container.is-collapsed) .metadata-properties-title {
+	font-weight: bold;
+}
+.metadata-property, .metadata-properties-heading {
+	padding: var(--size-4-2) var(--size-4-4);
+	line-height: 1 !important;
+	border-radius: 0px;
+	border: 2px solid transparent;
+
+	&.is-collapsed {
+		margin-bottom: 0;
+	}
+	
+}
+.metadata-container.is-collapsed {
+	background-color: transparent !important;
+
+	& .metadata-properties-heading.is-collapsed .metadata-properties-title {
+		color: var(--text-accent) !important;
+	}
+}
+.metadata-add-button {
+	margin-left: var(--size-4-2);
+}
+.metadata-property-icon svg {
+	stroke: var(--tab-text-color-focused);
+}
+.metadata-property-key-input {
+	color: var(--tab-text-color-focused);
+	background-color: transparent !important;
+}
+.metadata-property-value {
+	color: var(--text-normal);
+}
+.metadata-property-value:focus, .metadata-property-value:focus-within {
+	background-color: transparent !important;
+	border-bottom: 1px solid var(--text-normal);
+}
+.metadata-property:hover {
+	box-shadow: 0 0 0 0px;
+	background-color: var(--nav-item-background-hover);
+}
+.metadata-property:focus-within {
+	border: 2px solid var(--text-accent);
+	box-shadow: 0 0 0px;
+}
+.metadata-property:focus-within .metadata-property-key-input, .metadata-property-key-input:focus {
+	border: 0px;
+	box-shadow: 0 0 0px;
+}
+.metadata-property-key:focus-within {
+	background-color: transparent;
+}
+.metadata-properties-heading .collapse-indicator {
+	opacity: 1 !important;
+}
 
 /* HEADER */
 body {
@@ -412,6 +526,9 @@ body {
 body:not(.is-grabbing) .tree-item-self.is-clickable:hover {
 	border-left: 3px solid var(--text-accent);
 }
+.tree-item-children {
+	margin-bottom: 0px;
+}
 
 /* FORMS */
 textarea, input.metadata-input-text, input[type='date'], input[type='datetime-local'], input[type='text'], input[type='search'], input[type='email'], input[type='password'], input[type='number'] {
@@ -427,8 +544,11 @@ textarea:focus, input.metadata-input-text:focus, input[type='date']:focus, input
 	box-shadow: 0 0 0 2px var(--text-accent) !important;
 	border-bottom: 0px;
 }
-input[type='text'] {
+input[type='text']:not(input[type='text'].metadata-property-key-input) {
 	background-color: var(--background-secondary) !important;
+}
+.metadata-property input:focus {
+	box-shadow: 0 0 0px !important;
 }
 
 /* MODAL */
