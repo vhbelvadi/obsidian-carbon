@@ -6,6 +6,7 @@ A minimal and opinionated theme with light and dark schemes for Obsidian. This t
 
 1. Please turn off `Settings → Appearance → Translucent window` while using this theme.
 2. For best results, quit and reopen Obsidian after applying this theme.
+3. In the screenshots, `Settings → Appearance → Interface → Show inline title` has been turned off.
 
 ### Screenshots
 
