@@ -2,12 +2,16 @@ A minimal and opinionated theme with light and dark schemes for Obsidian. This t
 
 **NB** This theme is in beta. Please open an issue on Github if you have problems, or send an e-mail to hello@vhbelvadi.com or @vhbelvadi@historians.social on Mastodon.
 
+---
+
 ### Tips
 
 1. Please turn off `Settings → Appearance → Translucent window` while using this theme.
 2. For best results, quit and reopen Obsidian after applying this theme.
 3. In the screenshots, `Settings → Appearance → Interface → Show inline title` has been turned off.
 4. The recommended accent colour is `#0F62FE` – specify this in `Settings → Appearance → Accent color`.
+
+---
 
 ### Screenshots
 
