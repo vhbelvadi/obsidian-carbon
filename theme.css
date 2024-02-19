@@ -237,6 +237,9 @@ body {
 	/* padding-top: 0.5rem !important;
 	padding-bottom: 0.5rem !important; */
 }
+.cm-s-obsidian .cm-line.HyperMD-header {
+	padding-top: 0 !important;
+}
 .markdown-source-view.mod-cm6 .cm-line {
 	margin-top: 0.1rem !important;
 }
@@ -280,10 +283,13 @@ body {
 	margin-bottom: 0.25rem !important;
 }
 .cm-s-obsidian .cm-header.cm-header-3 {
-	font-size: 1.1rem !important;
+	font-size: 1.15rem !important;
+}
+.cm-s-obsidian .cm-header.cm-header-4 {
+	font-size: 1.05rem !important;
 }
 .HyperMD-list-line:has(+.HyperMD-list-line) { 
-	padding-bottom: 1rem !important; 
+	padding-bottom: 0.25rem !important; 
 }
 .cm-blockid {
 	color: var(--tab-text-color) !important;
