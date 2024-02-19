@@ -231,7 +231,7 @@ body {
 	--h2-weight: 400;
 }
 .HyperMD-header + .cm-line:not(.hr.cm-line) {
-	padding-top: var(--p-spacing) !important;
+	/* padding-top: var(--p-spacing) !important; */
 }
 .cm-line:has(.cm-hashtag) {
 	/* padding-top: 0.5rem !important;
@@ -282,8 +282,8 @@ body {
 .cm-s-obsidian .cm-header.cm-header-3 {
 	font-size: 1.1rem !important;
 }
-.HyperMD-list-line { 
-	padding-top: 1rem !important; 
+.HyperMD-list-line:has(+.HyperMD-list-line) { 
+	padding-bottom: 1rem !important; 
 }
 .cm-blockid {
 	color: var(--tab-text-color) !important;
