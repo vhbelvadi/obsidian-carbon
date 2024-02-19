@@ -260,6 +260,7 @@ body {
 }
 .HyperMD-header.HyperMD-header-1:first-of-type {
 	color: var(--text-accent);
+	padding-bottom: var(--p-spacing);
 }
 .markdown-reading-view .markdown-preview-view h2 {
 	font-size: 1.75rem !important;
