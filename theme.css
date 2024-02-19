@@ -259,8 +259,14 @@ body {
 	color: var(--text-accent);
 }
 .HyperMD-header.HyperMD-header-1:first-of-type {
+	color: inherit;
+}
+.inline-title {
 	color: var(--text-accent);
-	padding-bottom: var(--p-spacing);
+}
+body:not(.show-inline-title) .inline-title:not([data-level]) ~ div > div > .HyperMD-header.HyperMD-header-1:first-of-type > .cm-header.cm-header-1 {
+	color: var(--text-accent);
+	font-size: 1.75rem !important;
 }
 .markdown-reading-view .markdown-preview-view h2 {
 	font-size: 1.75rem !important;
