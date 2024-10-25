@@ -495,6 +495,8 @@ body {
 	margin-bottom: 0;
 	padding-top: var(--size-4-2) !important;
 	padding-bottom: var(--size-4-2) !important;
+	padding-left: var(--size-4-9) !important; /* Fix for file tree jumparound */
+	padding-right: var(--size-4-9) !important; /* Fix for file tree jumparound */
 }
 .tree-item-self[class*="-title"], .tree-item-self[class*="-title"]:hover, .nav-files-container .tree-item .tree-item-self[class*="-title"], .nav-files-container .tree-item .tree-item-self[class*="-title"]:hover {
 	font-weight: 500 !important;
@@ -562,6 +564,12 @@ input[type='text']:not(input[type='text'].metadata-property-key-input) {
 }
 .metadata-property input:focus {
 	box-shadow: 0 0 0px !important;
+}
+
+/* MERMAID DIAGRAM FIX */
+.mermaid .nodeLabel, .mermaid text.actor tspan, .mermaid .branchLabel tspan {
+	fill: white !important;
+	color: white !important;
 }
 
 /* MODAL */
