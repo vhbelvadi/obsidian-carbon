@@ -10,7 +10,7 @@ A minimal and opinionated theme with light and dark schemes for Obsidian. This t
 2. In the screenshots, `Settings → Appearance → Interface → Show inline title` has been turned off.
 3. The recommended accent colour is `#0F62FE` – specify this in `Settings → Appearance → Accent color`.
 4. If you plan to clone this repo into your `/.obsidian/themes` folder, please rename it to `Carbon` for it to show up inside Obsidian.
-5. For best results, quit and reopen Obsidian after applying this theme.
+5. For best results, quit and reopen Obsidian after applying as well as updating this theme.
 
 ---
 
